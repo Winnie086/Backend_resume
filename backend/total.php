@@ -4,7 +4,7 @@
     <form method="post" action="./api/edit.php">
         <table width="100%">
             <tbody>
-                <tr class="yel">
+                <tr class="dkb">
                     <td width="25%"></td>
                     <td width="25%">進站總人數：</td>
                     <td width="25%"><input type="text" name="total" value="<?=$Total->find(1)['total'];?>"></td>

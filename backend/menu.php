@@ -4,7 +4,7 @@
     <form method="post" action="./api/edit.php">
         <table width="100%">
             <tbody>
-                <tr class="yel">
+                <tr class="dkb">
 
                     <td width="30%">主選單名稱</td>
                     <td width="30%">選單連結網址</td>

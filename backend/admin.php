@@ -4,7 +4,7 @@
     <form method="post" action="./api/edit.php">
         <table width="100%">
             <tbody>
-                <tr class="yel">
+                <tr class="dkb">
 
                     <td width="45%">帳號</td>
                     <td width="45%">密碼</td>

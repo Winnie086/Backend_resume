@@ -1,13 +1,13 @@
-<h3>新增網站標題圖片</h3>
+<h3>新增大頭貼</h3>
 <hr>
 <form action="./api/add.php" method="post" enctype="multipart/form-data">
 <table>
     <tr>
-        <td>標題區圖片</td>
+        <td>選擇圖片</td>
         <td><input type="file" name="img" id=""></td>
     </tr>
     <tr>
-        <td>標題區替代文字</td>
+        <td>圖片替代文字</td>
         <td><input type="text" name="text" id=""></td>
     </tr>
     <tr>

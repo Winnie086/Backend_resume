@@ -4,7 +4,7 @@
     <form method="post" action="./api/edit.php">
         <table width="100%">
             <tbody>
-                <tr class="yel">
+                <tr class="dkb">
                     <td width="25%"></td>
                     <td width="25%">頁尾版權資料：</td>
                     <td width="25%"><input type="text" name="bottom" value="<?=$Bottom->find(1)['bottom'];?>"></td>

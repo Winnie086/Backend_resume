@@ -4,7 +4,7 @@
     <form method="post" action="./api/edit.php">
         <table width="100%">
             <tbody>
-                <tr class="yel">
+                <tr class="dkb">
                     <td width="70%">校園映像資料圖片</td>
                     <td width="10%">顯示</td>
                     <td width="10%">刪除</td>

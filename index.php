@@ -43,7 +43,7 @@ include_once "base.php";
 
           <nav class="nav-menu">
             <ul>
-              <li class="active"><a href="index.html"><i class="bx bx-home"></i><span>Home</span></a></li>
+              <li class="active"><a href="index.php"><i class="bx bx-home"></i><span>Home</span></a></li>
               <li><a href="#about"><i class="fas fa-address-book"></i> <span>About</span></a></li>
               <li><a href="#experience"><i class="bx bx-user"></i> <span>Experience</span></a></li>
               <li><a href="#skills"> <i class="fas fa-award"></i><span>Skills</span></a></li>
@@ -66,14 +66,13 @@ include_once "base.php";
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <h1><a href="index.html">Wu Yi-Ning</a></h1>
+        <h1><a href="index.php">Wu Yi-Ning</a></h1>
       </div>
 
      
       <nav class="nav-menu">
         <ul>
-          <!-- <li><a href="login.html" title="Login"><i class="fas fa-sign-in-alt"></i><span>Login</span></a></li> -->
-          <li class="active"><a href="index.html"><i class="bx bx-home"></i><span>Home</span></a></li>
+          <li class="active"><a href="index.php"><i class="bx bx-home"></i><span>Home</span></a></li>
           <li><a href="#about"><i class="far fa-address-card"></i> <span>About</span></a></li>
           <li><a href="#experience"><i class="bx bx-user"></i> <span>Experience</span></a></li>
           <li><a href="#skills"> <i class="fas fa-award"></i><span>Skills</span></a></li>
@@ -150,8 +149,10 @@ include_once "base.php";
         <div class="row">
           <div class="col-lg-4" data-aos="flip-down">
 
-          <img src="./img/<?=$image['img'];?>" alt="profile-img">
-
+          <?php
+          $title=$Title->find(['sh'=>1]);
+          ?>
+          <img src="./img/<?=$Title->find(['sh'=>1])['img'];?>" title="<?=$Title->find(['sh'=>1])['text'];?>" alt="<?=$Title->find(['sh'=>1])['text'];?>" class="img-fluid" width="200" height="150">
             <!-- <img src="image/profile-img.jpg" class="img-fluid" alt="profile-img" width="200"> -->
 
           </div>
@@ -504,7 +505,7 @@ include_once "base.php";
       </div>
       
       <div class="copyright">
-        &copy; <strong><span>2021_Winnie_Resume</span></strong>
+        &copy;<?=$Bottom->find(1)['bottom'];?>
       </div>
 
     </div>

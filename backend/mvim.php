@@ -4,7 +4,7 @@
     <form method="post" action="./api/edit.php">
         <table width="100%">
             <tbody>
-                <tr class="yel">
+                <tr class="dkb">
                     <td width="70%">網站標題</td>
                     <td width="10%">顯示</td>
                     <td width="10%">刪除</td>
