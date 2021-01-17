@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Architects Daughter', cursive;
+}
+
+html, body{
+  height:100%;
+  background:#282828;
+}
+
+body{
+  background: url("image/wolf.jpg") no-repeat center;
+  background-size: 456px 600px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 600px;
+  height: 500px;
+  background-color:rgba(0,0,0,.3);
+  border-radius:8px;
+  border: 3px solid #eee;
+  box-shadow: 0 0 60px #000;
+  backdrop-filter: blur(6px);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width:400px;
+  color:#fff;
+}
+
+.form h2{
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  /* border-bottom: 2px dashed #eee; */
+}
+
+.form .group{
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.form label{
+  line-height:2;
+
+}
+
+.form input{
+width:100%;
+border-radius: 5px;
+border:1px solid #aaa;
+line-height:2.5;
+}
+
+.form .btn-group{
+  line-height:2.5;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.form .btn{
+  font-size: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  width:170px;
+  padding: 10px 0;
+}
+
+.form .btn+.btn{
+  margin-left: 10px;
+}
+
+.forget {
+ padding: 15px;
+}
+
+.forget .a{
+  width:200px;
+  padding: 20px;
+
+  font-size: 10px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 760px) {
+  body{
+    background-size: 350px 467px;
+  }
+  .login {
+    width: 300px;
+    height: 300px;
+  }
+  .form{
+    width:200px;
+  }
+  .form .btn{
+    width:70px;
+  }
+  .form .btn-group{
+    margin-bottom:6em;
+
+  }
+  .form input{
+    line-height:2;
+    }
+
+    .forget .a{
+      width:100px;
+      padding: 20px;
+    
+      font-size: 8px;
+    }
+
+    .form h2{
+      text-align: center;
+      font-size: 3rem;
+      padding: 10px;
+      margin: 10px;
+    }
+
+}
+
+@media (max-width: 320px) {
+  body{
+    background-size: 350px 467px;
+  }
+  .login {
+    width: 300px;
+    height: 300px;
+  }
+  .form{
+    width:200px;
+  }
+  .form .btn{
+    width:70px;
+  }
+  .form .btn-group{
+    margin-bottom:6em;
+  }
+  .form input{
+    line-height:2;
+    }
+
+    .forget .a{
+      width:100px;
+      padding: 20px;
+      font-size: 8px;
+    }
+    
+}
