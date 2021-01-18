@@ -67,19 +67,24 @@
               自傳 </div>
           </a>
 
-          <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=image">
-            <div class="mainmu">
-              圖片 </div>
-          </a>
-
           <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=total">
             <div class="mainmu">
               技能表 </div>
           </a>
 
+          <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=menu">
+            <div class="mainmu">
+              作品集管理 </div>
+          </a>
+
           <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=title">
             <div class="mainmu">
               圖片管理 </div>
+          </a>
+
+          <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=image">
+            <div class="mainmu">
+              圖片 </div>
           </a>
 
           <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=bottom">
@@ -91,14 +96,6 @@
             <div class="mainmu">
               管理者帳號管理 </div>
           </a>
-
-          <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=menu">
-            <div class="mainmu">
-              選單管理 </div>
-          </a>
-
-
-
 
         </div>
         <div style="margin:3px; width:95%; height:20%; line-height:100px;">

@@ -6,8 +6,8 @@
             <tbody>
                 <tr class="dkb">
 
-                    <td width="30%">主選單名稱</td>
-                    <td width="30%">選單連結網址</td>
+                    <td width="30%">作品</td>
+                    <td width="30%">作品連結網址</td>
                     <td width="10%">次選單數</td>
                     <td width="10%">顯示</td>
                     <td width="10%">刪除</td>
