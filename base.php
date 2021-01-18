@@ -3,12 +3,12 @@ date_default_timezone_set("Asia/Taipei");
 session_start();
 $tstr=[
     'title'=>"網站標題管理",
-    'ad'=>"動態文字管理",
-    'mvim'=>"動畫圖片管理",
+    'ad'=>"編輯關於我",
+    'mvim'=>"編輯學經歷",
     'image'=>"校園映像圖片管理",
     'total'=>"進站人數管理",
     'bottom'=>"頁尾版權文字管理",
-    'news'=>"最新管理",
+    'news'=>"管理自傳",
     'admin'=>"管理者管理",
     'menu'=>"選單管理",
 ];
@@ -19,7 +19,7 @@ $addstr=[
     'image'=>"新增校園映像圖片",
     'total'=>"新增進站人數",
     'bottom'=>"新增頁尾版權文字",
-    'news'=>"新增最新消息",
+    'news'=>"新增自傳",
     'admin'=>"新增管理者",
     'menu'=>"新增選單",
 ];
@@ -50,7 +50,7 @@ class DB{
     }
 
     function all(...$arg){
-        $sql="select * from $this->table ";
+        $sql= " select * from $this->table ";
 
         if(isset($arg[0])){
             if(is_array($arg[0])){
@@ -73,7 +73,7 @@ class DB{
 
     }
     function count(...$arg){
-        $sql="select count(*) from $this->table ";
+        $sql=" select count(*) from $this->table ";
 
         if(isset($arg[0])){
             if(is_array($arg[0])){
@@ -95,7 +95,7 @@ class DB{
         return $this->pdo->query($sql)->fetchColumn();
     }
     function find($id){
-        $sql="select * from $this->table ";
+        $sql=" select * from $this->table ";
 
         if(is_array($id)){
             foreach($id as $key => $value){
@@ -135,11 +135,11 @@ class DB{
                 $tmp[]=sprintf("`%s`='%s'",$key,$value);
             }
 
-            $sql="update $this->table set ".implode(',',$tmp)." where `id`='{$arr['id']}'";
+            $sql=" update $this->table set ".implode(',',$tmp). " where `id`='{$arr['id']}' ";
         }else{
             //insert
 
-            $sql="insert into $this->table (`".implode("`,`",array_keys($arr))."`) values('".implode("','",$arr)."')";
+            $sql=" insert into $this->table (`".implode("`,`",array_keys($arr))."`) values('".implode("','",$arr)."')";
         }
         //echo $sql;
         return $this->pdo->exec($sql);
@@ -159,6 +159,7 @@ function to($url){
 $Title=new DB("title");
 $Ad=new DB("ad");
 $Mvim=new DB("mvim");
+$Mvim01=new DB("mvim01");
 $Image=new DB("image");
 $Total=new DB("total");
 $Bottom=new DB("bottom");

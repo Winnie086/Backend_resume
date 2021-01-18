@@ -6,7 +6,7 @@
             <tbody>
                 <tr class="dkb">
 
-                    <td width="70%">最新消息資料內容</td>
+                    <td width="70%">自傳</td>
                     <td width="10%">顯示</td>
                     <td width="10%">刪除</td>
 

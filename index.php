@@ -26,8 +26,9 @@ include_once "base.php";
   <link href="vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
   <!--CSS File -->
   <link rel="stylesheet" href="style.css">
@@ -37,29 +38,31 @@ include_once "base.php";
 <body>
   <!-- ======= Mobile nav toggle button ======= -->
 
-    <div class="pos-f-t mobile-nav-toggle">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
+  <div class="pos-f-t mobile-nav-toggle">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
 
-          <nav class="nav-menu">
-            <ul>
-              <li class="active"><a href="index.php"><i class="bx bx-home"></i><span>Home</span></a></li>
-              <li><a href="#about"><i class="fas fa-address-book"></i> <span>About</span></a></li>
-              <li><a href="#experience"><i class="bx bx-user"></i> <span>Experience</span></a></li>
-              <li><a href="#skills"> <i class="fas fa-award"></i><span>Skills</span></a></li>
-              <li><a href="#portfolio"> <i class="fas fa-spinner"></i><span>Portfolio</span></a></li>
-            </ul>
-          </nav>
+        <nav class="nav-menu">
+          <ul>
+            <li class="active"><a href="index.php"><i class="bx bx-home"></i><span>Home</span></a></li>
+            <li><a href="#about"><i class="fas fa-address-book"></i> <span>About</span></a></li>
+            <li><a href="#experience"><i class="bx bx-user"></i> <span>Experience</span></a></li>
+            <li><a href="#skills"> <i class="fas fa-award"></i><span>Skills</span></a></li>
+            <li><a href="#portfolio"> <i class="fas fa-spinner"></i><span>Portfolio</span></a></li>
+            <li><a href="#autobiography "><i class="fab fa-autoprefixer"></i><span>Autobiography</span></a></li>
+          </ul>
+        </nav>
 
-        </div>
       </div>
-      <nav class="navbar navbar-dark bg-dark p-0">
-        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
     </div>
-    
+    <nav class="navbar navbar-dark bg-dark p-0">
+      <button class="navbar-toggler p-0" type="button" data-toggle="collapse"
+        data-target="#navbarToggleExternalContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -69,7 +72,7 @@ include_once "base.php";
         <h1><a href="index.php">Wu Yi-Ning</a></h1>
       </div>
 
-     
+
       <nav class="nav-menu">
         <ul>
           <li class="active"><a href="index.php"><i class="bx bx-home"></i><span>Home</span></a></li>
@@ -77,13 +80,14 @@ include_once "base.php";
           <li><a href="#experience"><i class="bx bx-user"></i> <span>Experience</span></a></li>
           <li><a href="#skills"> <i class="fas fa-award"></i><span>Skills</span></a></li>
           <li><a href="#portfolio"> <i class="fas fa-spinner"></i><span>Portfolio</span></a></li>
+          <li><a href="#autobiography "><i class="fab fa-autoprefixer"></i><span>Autobiography</span></a></li>
         </ul>
       </nav>
 
     </div>
   </header>
 
-
+  
 
   <main id="main">
     <!-- ======= Hero Section ======= -->
@@ -128,11 +132,11 @@ include_once "base.php";
         </div>
 
         <script>
-          const logo = document.querySelectorAll('#logo path')
-          console.log(logo);
-          for (let i = 0; i < logo.length; i++) {
-            console.log(`Letter ${i} is ${logo[i].getTotalLength}`);
-          }
+        const logo = document.querySelectorAll('#logo path')
+        console.log(logo);
+        for (let i = 0; i < logo.length; i++) {
+          console.log(`Letter ${i} is ${logo[i].getTotalLength}`);
+        }
         </script>
 
       </div>
@@ -149,10 +153,11 @@ include_once "base.php";
         <div class="row">
           <div class="col-lg-4" data-aos="flip-down">
 
-          <?php
+            <?php
           $title=$Title->find(['sh'=>1]);
           ?>
-          <img src="./img/<?=$Title->find(['sh'=>1])['img'];?>" title="<?=$Title->find(['sh'=>1])['text'];?>" alt="<?=$Title->find(['sh'=>1])['text'];?>" class="img-fluid" width="200" height="150">
+            <img src="./img/<?=$Title->find(['sh'=>1])['img'];?>" title="<?=$Title->find(['sh'=>1])['text'];?>"
+              alt="<?=$Title->find(['sh'=>1])['text'];?>" class="img-fluid" width="200" height="150">
             <!-- <img src="image/profile-img.jpg" class="img-fluid" alt="profile-img" width="200"> -->
 
           </div>
@@ -338,172 +343,260 @@ include_once "base.php";
               <div class="accordion-body">
 
 
-        <div class="accordion" id="accordionExample" data-aos="fade-up">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  PHP
-                </button>
-              </h2>
-            </div>
-        
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body">
+                <div class="accordion" id="accordionExample" data-aos="fade-up">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          PHP
+                        </button>
+                      </h2>
+                    </div>
 
-                
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <div class="col">
-                    <div class="card">
-                      <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                      data-parent="#accordionExample">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body">
-                          <a href="#" class="card-link">link</a>
+
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                          <div class="col">
+                            <div class="card">
+                              <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                              </div>
+                              <div class="card-footer">
+                                <div class="card-body">
+                                  <a href="#" class="card-link">link</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                              </div>
+                              <div class="card-footer">
+                                <div class="card-body">
+                                  <a href="#" class="card-link">link</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
+
+
+
                       </div>
                     </div>
                   </div>
-  
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
+
+
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          JS
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body">
-                          <a href="#" class="card-link">link</a>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                          <div class="col">
+                            <div class="card">
+                              <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                              </div>
+                              <div class="card-footer">
+                                <div class="card-body">
+                                  <a href="#" class="card-link">link</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                              </div>
+                              <div class="card-footer">
+                                <div class="card-body">
+                                  <a href="#" class="card-link">link</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
+
+
                       </div>
                     </div>
                   </div>
-  
+
+
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          PS
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                          <div class="col">
+                            <div class="card">
+                              <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                              </div>
+                              <div class="card-footer">
+                                <div class="card-body">
+                                  <a href="#" class="card-link">link</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-100">
+                              <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                              </div>
+                              <div class="card-footer">
+                                <div class="card-body">
+                                  <a href="#" class="card-link">link</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
-  
-  
-                
+
+
               </div>
-            </div>
-          </div>
-  
-  
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  JS
-                </button>
-              </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <div class="col">
-                    <div class="card">
-                      <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body">
-                          <a href="#" class="card-link">link</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body">
-                          <a href="#" class="card-link">link</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                </div>
-  
-  
-              </div>
-            </div>
-          </div>
-  
-  
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  PS
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-  
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                  <div class="col">
-                    <div class="card">
-                      <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body">
-                          <a href="#" class="card-link">link</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="https://picsum.photos/200/150/?random=1" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-body">
-                          <a href="#" class="card-link">link</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  
-                </div>
-  
-  
-  
-              </div>
-            </div>
-          </div>
+
+
+    </section>
+
+    <!-- ======= Autobiography  Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Autobiography || 自傳</h2>
         </div>
 
+        <div class="row skills-content">
+          <div class="col-sm-6 col-md-8 col-lg-12">
+            專輯：愛情的盡頭
+
+            歌曲：Last Dance
+
+            作詞：伍佰
+
+            作曲：伍佰
+
+            所以暫時將妳眼睛閉了起來
+
+            黑暗之中漂浮我的期待
+
+            平靜臉孔映著繽紛色彩
+
+            讓人好不疼愛
+
+            妳可以隨著我的步伐輕輕柔柔的踩
+
+            將美麗的回憶慢慢重來
+
+            突然之間浪漫無法釋懷
+
+            明天我要離開
+
+            妳給的愛 無助的等待
+
+            是否我一個人走 想聽見妳的挽留
+
+            春風秋雨飄飄落落只為寂寞
+
+            妳給的愛 甜美的傷害
+
+            深深的鎖住了我 隱藏不住的脆弱
+
+            氾濫河水將我沖向妳的心頭
+
+            不停流
+
+
+
+            所以暫時將妳眼睛閉了起來
+
+            可以慢慢滑進我的心懷
+
+            舞池中的人群漸漸散開
+
+            應該就是現在
+
+            妳給的愛 無助的等待
+
+            是否我一個人走 想聽見妳的挽留
+
+            春風秋雨飄飄落落只為寂寞
+
+            妳給的愛 甜美的傷害
+
+            想問問妳的心中 不願面對的不懂
+
+            明天之後不知道面前的妳
+
+            是否依然愛我
+
+
+
+            不知道
+          </div>
+
+
+        </div>
 
       </div>
-
-
     </section>
 
   </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    
+
     <div class="container">
-      
+
       <div class="github_icon">
         <a href="https://github.com/Winnie086?tab=repositories"><i class="fab fa-github fa-2x"></i></a>
         <a href="login.php" title="Login"><i class="fas fa-sign-in-alt fa-2x"></i><span></span></a>
       </div>
-      
+
       <div class="copyright">
         &copy;<?=$Bottom->find(1)['bottom'];?>
       </div>
@@ -520,14 +613,14 @@ include_once "base.php";
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+  AOS.init();
   </script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" ></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -146,9 +146,9 @@ input:focus,button:focus
 {
 	box-shadow:#09C 0px 0px 3px .3px;
 }
-.dkb td
+.dkb
 {
-	background:#173b6c;
+	background:#173b6c!important;
 	color:#fff;
 	text-align:center;
 }
